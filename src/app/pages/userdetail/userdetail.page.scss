@@ -1,0 +1,184 @@
+* {
+    text-transform: none !important;
+}
+*::-webkit-scrollbar {
+    display: none;
+  }
+ion-back-button {
+    color: var(--ion-color-primarycolor);
+    font-size: .95em;
+    text-transform: none;
+    padding:0px 10px 0px 5px;
+}
+ion-toolbar {
+    --border-width: 0 !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    transition: all ease .4s;
+    --background: white !important;
+}
+.header-md::after {
+    background-image: none !important;
+}
+super-tabs-toolbar {
+    border-bottom: solid 1px rgb(220,220,220);
+}
+super-tabs-toolbar::after {
+    background-image: none !important;
+}
+:host {  
+    --super-tabs-toolbar-background: white;
+    --st-indicator-color: var(--ion-color-primarycolor);
+    --st-base-color-inactive: var(--ion-color-textcolor);
+    --st-base-color-active: var(--ion-color-primarycolor);
+}
+.recipe-list {
+    width: 100%;
+    // height: 100%;
+    overflow:auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    padding: 20px 16px 20px 16px;
+    box-sizing: border-box;
+    .user {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        .recipe-user {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .user-info {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 10px;
+                img {
+                    width: 120%;
+                    min-height: 50px;
+                }
+            }
+            p{
+                margin: 0px;
+                font-size: .8em;
+                color: var(--ion-color-textcolor3);
+            }
+        }
+        .follow {
+            width: 120px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: var(--ion-color-secondarycolor);
+            border:solid 1px var(--ion-color-secondarycolor);
+            background-color: white;
+        }
+        .following {
+            width: 120px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: var(--ion-color-secondarycolor);
+            border:solid 1px var(--ion-color-secondarycolor);
+            color: white;
+        }
+    }
+}
+.recipe-item {
+    width: 100%;
+    margin: 0px 0px 16px 0px;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    flex: none;
+    overflow: hidden; 
+    .recipe-info {
+        width: 100%;
+        min-height: 90px;
+        background-color: white;
+        padding: 5px 15px 15px 5px;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        .recipe-heading {
+            font-size: 1em;
+            font-weight: 600;
+            word-spacing: 1.5px;
+            margin: 0px;
+            color: var(--ion-color-textcolor4);
+        }
+        .recipe-subheading {
+            font-size: .75em;
+            font-weight: 500;
+            word-spacing: 1.5px;
+            margin: 0px 0px 0px 0px;
+            color: var(--ion-color-textcolor5);
+        }
+        .recipe-count {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 5px;
+            .recipe-count-item {
+                display: flex;
+                align-items: center;
+                margin-right: 10px;
+                p{
+                    margin:0;
+                    font-size: .82em;
+                    font-weight: 500;
+                    word-spacing: 1.5px;
+                    color: var(--ion-color-textcolor3);
+                    margin-left: 2px;
+                }
+                ion-icon {
+                    color:var(--ion-color-textcolor3);
+                    font-size: 1.2em;
+                    // margin-right: 4px;
+                }
+            }
+        }
+        
+    }
+    .image-container {
+        width: 100%;
+        height: 200px;
+        border-radius: 19px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        img {
+            min-width: 110%;
+            min-height: 200px;
+        }
+        .recipe-rating {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            content: '';
+            padding: 4px 10px;
+            border-radius: 10px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            p{
+                margin:0;
+                font-size: .65em;
+                font-weight: 500;
+                word-spacing: 1.5px;
+                color: var(--ion-color-textcolor4);
+                margin-left: 4px;
+            }
+            ion-icon {
+                color:#FFA000;
+                font-size: .7em;
+                // margin-right: 4px;
+            }
+        }
+    }
+}

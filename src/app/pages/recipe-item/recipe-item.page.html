@@ -1,0 +1,131 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>recipeItem</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="container">
+    <div class="header">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/tabs" text=""></ion-back-button>
+      </ion-buttons>
+      <ion-icon name="heart-outline" (click)="this.like()" *ngIf="this.liked==false"></ion-icon>
+      <ion-icon name="heart" class="liked" (click)="this.like()" *ngIf="this.liked==true"></ion-icon>
+    </div>
+    <div class="image-container">
+      <img src="../../../assets/food/shawarma1.jpg" />
+    </div>
+    <div class="recipe-container">
+      <div class="recipe-content">
+        <p class="recipe-subheading2" [routerLink] = "['/tabs/feed/categories/1']">
+          <span>Breakfast </span>
+          <li class="recipe-info-content">
+            <i>5:30PM 22nd June 2020</i>
+          </li>
+        </p>
+        <p class="recipe-heading">Chicken Shawarma with beef sausages</p>
+        <div class="recipe-count">
+          <div class="recipe-count-item" [routerLink]="['reviews']">
+            <ion-icon name="chatbubble-outline"></ion-icon>
+            <p>48</p>
+          </div>
+          <div class="recipe-count-item" [routerLink]="['/tabs/feed/saved-by/12']">
+            <ion-icon name="heart-outline"></ion-icon>
+            <p>48</p>
+          </div>
+          <div class="recipe-count-item">
+            <ion-icon name="time-outline"></ion-icon>
+            <p>48mins</p>
+          </div>
+          <div class="recipe-count-item">
+            <ion-icon name="star" class="star"></ion-icon>
+            <p>4.8(342)</p>
+          </div>
+          <div class="recipe-count-item">
+            <ion-icon name="pulse"></ion-icon>
+            <p>Easy</p>
+          </div>
+        </div>
+        <div class="tag-list">
+          <div class="tag-item">
+            Breakfast
+          </div>
+          <div class="tag-item">
+            Shawarma
+          </div>
+          <div class="tag-item">
+            Junk
+          </div>
+        </div>
+        <div class="user">
+          <div class="recipe-user" [routerLink]="['/tabs/feed/user/2']">
+            <div class="user-info">
+              <img src="../../../assets/food/cake1.jpg" />
+            </div>
+            <div>
+              <p>Farouk Bakre</p>
+              <p>@farbaks</p>
+            </div>
+          </div>
+          <button (click)="this.presentToast()">Follow</button>
+        </div>
+        <div class="recipe-info">
+          <p class="recipe-subheading">About Recipe</p>
+          <p class="recipe-info-content">
+            Learning how to make a chicken shawarma with beef sausages can be fun. 
+            Spice up this recipe by adding a bit of alligator pepper to spice things up.
+
+          </p>
+        </div>
+        <div class="recipe-info">
+          <p class="recipe-subheading">Ingredients</p>
+          <li class="recipe-info-content">
+            Lebanese Bread
+          </li>
+          <li class="recipe-info-content">
+            Sausages
+          </li>
+          <li class="recipe-info-content">
+            Cabbages
+          </li>
+        </div>
+        <div class="recipe-info">
+          <p class="recipe-subheading">Steps</p>
+          <li class="recipe-info-content">
+            Rinse cabbage in a bowl of water and  then slice the cabbage into very tiny bits.
+          </li>
+          <li class="recipe-info-content">
+            Sausages
+          </li>
+          <li class="recipe-info-content">
+            Cabbages
+          </li>
+        </div>
+        <div class="container-link">
+          <p class="recipe-subheading3">Reviews(48)</p>
+          <p class="see-more" [routerLink]="['reviews']">See All</p>
+        </div>
+        <div class="container-link">
+          <p class="rate">Tap to rate:</p>
+          <ionic5-star-rating #rating
+            activeIcon = "star"
+            defaultIcon = "star-outline"
+            activeColor = "var(--ion-color-primarycolor)" 
+            defaultColor = "var(--ion-color-primarycolor3)"
+            readonly="false"
+            [(ngModel)]="rate"
+            fontSize = "18px"
+            (ratingChanged)="logRatingChange($event)">
+        </ionic5-star-rating>
+        </div>
+        <div class="container-link">
+          <div class="write-review" (click)= "this.newRewiew()">
+            <ion-icon name="create-outline"></ion-icon>
+            <p>Write a Review</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

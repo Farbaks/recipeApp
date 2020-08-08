@@ -1,0 +1,243 @@
+.container {
+    width: 100%;
+    position: relative;
+    box-sizing: border-box;
+    background-color: var(--ion-color-secondarycolor2);
+    min-height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    // overflow: hidden;
+}
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    padding: 16px 16px 16px 5px;
+    z-index: 1;
+    ion-icon {
+        color: var(--ion-color-secondarycolor2);   
+        font-size:1.6em !important;
+    }
+    .liked {
+        color: var(--ion-color-secondarycolor);
+    }
+    ion-back-button {
+        color: var(--ion-color-secondarycolor2);
+        font-size: 1.05em !important;
+        text-transform: none;
+    }   
+}
+.liked {
+    color: var(--ion-color-secondarycolor) !important;
+}
+.image-container {
+    width: 100%;
+    position: relative;
+    top: 0px;
+    height: auto;
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+}
+.recipe-container {
+    width: 100%;
+    position: relative;
+    .recipe-content {
+        width: 100%;
+        position: absolute;
+        top: -20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        z-index: 1;
+        background-color: var(--ion-color-secondarycolor2);
+        padding: 20px 16px 20px 16px;
+        .review-list {
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+        }
+        .review-item {
+            width: 100%;
+            padding: 10px 15px;
+            background-color: var(--ion-color-bgcolor);
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        .review-date {
+            margin: 0px;
+            font-size: .8em;
+            color: var(--ion-color-textcolor3);
+        }
+        .review-content {
+            font-size: .8em;
+            font-weight: 400;
+            word-spacing: 1.5px;
+            line-height: 1.4em;
+            margin: 10px 0px 0px 0px;
+            text-align: justify;
+            color: var(--ion-color-textcolor);
+        }
+        .recipe-heading {
+            font-size: 1em;
+            font-weight: 700;
+            word-spacing: 1.2px;
+            margin-top: 10px;
+            color: var(--ion-color-textcolor);
+        }
+        .recipe-subheading {
+            font-size: .85em;
+            font-weight: 500;
+            word-spacing: 1.2px;
+            margin: 3px 0px 10px 0px;
+            color: var(--ion-color-textcolor4);
+        }
+        .recipe-subheading2 {
+            font-size: .75em;
+            font-weight: 500;
+            word-spacing: 1.5px;
+            margin: 3px 0px 0px 0px;
+            color: var(--ion-color-textcolor5);
+            display: flex;
+            span {
+                margin-right: 10px;
+            }
+        }
+        .recipe-subheading3 {
+            font-size: .85em;
+            font-weight: 500;
+            word-spacing: 1.2px;
+            margin: 0px;
+            color: var(--ion-color-textcolor4);
+        }
+        .recipe-count {
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: 5px;
+            .recipe-count-item {
+                display: flex;
+                align-items: center;
+                margin-right: 20px;
+                margin-bottom: 5px;
+                p{
+                    margin:0;
+                    font-size: .82em;
+                    font-weight: 500;
+                    word-spacing: 1.5px;
+                    color: var(--ion-color-textcolor5);
+                    margin-left: 2px;
+                }
+                ion-icon {
+                    color:var(--ion-color-textcolor5);
+                    font-size: 1.2em;
+                    // margin-right: 4px;
+                }
+                .star {
+                    color:#FFA000;
+                }
+            }
+        }
+        .tag-list {
+            width: 100%;
+            display: flex;
+            flex-flow: row wrap;
+            margin-top: 10px;
+            .tag-item {
+                margin-right: 10px;
+                font-size: .7em;
+                font-weight: 400;
+                padding: 8px 12px;
+                color: var(--ion-color-primarycolor);
+                background-color: var(--ion-color-primarycolor2);
+                border-radius: 15px;
+            }
+        }
+        .user {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            .recipe-user {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                .user-info {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin-right: 10px;
+                    img {
+                        width: 120%;
+                        min-height: 50px;
+                    }
+                }
+                p{
+                    margin: 0px;
+                    font-size: .8em;
+                    color: var(--ion-color-textcolor3);
+                }
+            }
+            button {
+                padding: 10px 20px;
+                border-radius: 20px;
+                color: var(--ion-color-secondarycolor);
+                border:solid 1px var(--ion-color-secondarycolor);
+                background-color: white;
+            }
+        }
+        .container-link {
+            width: 100%;
+            display: flex;
+            flex-flow: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            // padding: 10px 16px 0px 16px;
+            .container-heading {
+                font-size: 1.12em;
+                font-weight: 600;
+                word-spacing: 1.5px;
+                margin: 0px;
+                color: var(--ion-color-textcolor4);
+            }
+            .see-more {
+                font-size: .8em;
+                font-weight: 400;
+                color: var(--ion-color-primarycolor);
+                margin: 0px;
+            }
+        }
+    }
+}
+.write-review {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    p{
+        margin:0;
+        font-size: .82em;
+        font-weight: 400;
+        word-spacing: 1.5px;
+        color: var(--ion-color-primarycolor);
+        margin-left: 2px;
+    }
+    ion-icon {
+        color:var(--ion-color-primarycolor);
+        font-size: 1.2em;
+        // margin-right: 4px;
+    }
+    .star {
+        color:#FFA000;
+    }
+}

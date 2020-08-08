@@ -1,0 +1,368 @@
+<ion-header translucent="true" >
+  <ion-toolbar class="toolbar1"id="header">
+    <div>
+      <p class="profile-heading">Discover Recipes</p>
+      <p class="profile-subheading">Welcome back, Farouk</p>
+    </div>
+    
+    <ion-buttons slot="end">
+      <div class="profile-img">
+        <img src="../../../assets/food/shawarma1.jpg" />
+      </div>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollEvents]="true"
+(ionScroll)="logScrolling($event)">
+<ion-refresher slot="fixed">
+  <ion-refresher-content></ion-refresher-content>
+</ion-refresher>
+  <div class="container">
+    <div class="category-list">
+      <div class="home-search">
+        <ion-icon name="search"></ion-icon>
+        <input type="search" [(ngModel)]="query" placeholder="Search for recipes or friends" (search)="search()" />
+      </div>
+    </div>
+    <div class="container-link">
+      <p class="container-heading">Categories</p>
+      <p class="see-more" [routerLink]="['categories']">See All</p>
+    </div>
+    <div class="category-list">
+      <div class="category-item" [routerLink] = "['/tabs/feed/categories/2']">
+        <div class="image-container">
+          <img src="../../../assets/food/pancakes.jpg" />
+        </div>
+        <p>Breakfast</p>
+      </div>
+      <div class="category-item">
+        <div class="image-container">
+          <img src="../../../assets/food/pizza1.jpg" />
+        </div>
+        <p>Brunch</p>
+      </div>
+      <div class="category-item">
+        <div class="image-container">
+          <img src="../../../assets/food/cake1.jpg" />
+        </div>
+        <p>Lunch</p>
+      </div>
+      <div class="category-item">
+        <div class="image-container">
+          <img src="../../../assets/food/cake2.jpg" />
+        </div>
+        <p>Brunch</p>
+      </div>
+      <div class="category-item">
+        <div class="image-container">
+          <img src="../../../assets/food/shawarma1.jpg" />
+        </div>
+        <p>Brunch</p>
+      </div>
+    </div>
+    <div class="container-link">
+      <p class="container-heading">Fast n easy</p>
+      <p class="see-more" [routerLink]="['custom-recipe-list/fast-n-easy']">See All</p>
+    </div>
+    <div class="category-list">
+      <div class="category-item2">
+        <div class="image-container">
+          <img src="../../../assets/food/shawarma1.jpg" />
+        </div>
+        <div class="recipe-count">
+          <div class="recipe-count-item">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span>48</span>
+          </div>
+          <div class="recipe-count-item">
+            <ion-icon name="time-outline"></ion-icon>
+            <span>48mins</span>
+          </div>
+        </div>
+      </div>
+      <div class="category-item2">
+        <div class="image-container">
+          <img src="../../../assets/food/pizza1.jpg" />
+        </div>
+        <div class="recipe-count">
+          <div class="recipe-count-item">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span>48</span>
+          </div>
+          <div class="recipe-count-item">
+            <ion-icon name="time-outline"></ion-icon>
+            <span>48mins</span>
+          </div>
+        </div>
+      </div>
+      <div class="category-item2">
+        <div class="image-container">
+          <img src="../../../assets/food/cake1.jpg" />
+        </div>
+        <div class="recipe-count">
+          <div class="recipe-count-item">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span>48</span>
+          </div>
+          <div class="recipe-count-item">
+            <ion-icon name="time-outline"></ion-icon>
+            <span>48mins</span>
+          </div>
+        </div>
+      </div>
+      <div class="category-item2">
+        <div class="image-container">
+          <img src="../../../assets/food/cake2.jpg" />
+        </div>
+        <div class="recipe-count">
+          <div class="recipe-count-item">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span>48</span>
+          </div>
+          <div class="recipe-count-item">
+            <ion-icon name="time-outline"></ion-icon>
+            <span>48mins</span>
+          </div>
+        </div>
+      </div>
+      <div class="category-item2">
+        <div class="image-container">
+          <img src="../../../assets/food/shawarma1.jpg" />
+        </div>
+        <div class="recipe-count">
+          <div class="recipe-count-item">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span>48</span>
+          </div>
+          <div class="recipe-count-item">
+            <ion-icon name="time-outline"></ion-icon>
+            <span>48mins</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-link">
+      <p class="container-heading">Saved by friends</p>
+      <p class="see-more" [routerLink]="['custom-recipe-list/saved-by-friends']">See All</p>
+    </div>
+    <div class="category-list">
+      <div class="category-item2">
+        <div class="image-container">
+          <img src="../../../assets/food/shawarma1.jpg" />
+        </div>
+        <div class="recipe-count">
+          <div class="recipe-count-item">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span>48</span>
+          </div>
+          <div class="recipe-count-item">
+            <ion-icon name="time-outline"></ion-icon>
+            <span>48mins</span>
+          </div>
+        </div>
+      </div>
+      <div class="category-item2">
+        <div class="image-container">
+          <img src="../../../assets/food/pizza1.jpg" />
+        </div>
+        <div class="recipe-count">
+          <div class="recipe-count-item">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span>48</span>
+          </div>
+          <div class="recipe-count-item">
+            <ion-icon name="time-outline"></ion-icon>
+            <span>48mins</span>
+          </div>
+        </div>
+      </div>
+      <div class="category-item2">
+        <div class="image-container">
+          <img src="../../../assets/food/cake1.jpg" />
+        </div>
+        <div class="recipe-count">
+          <div class="recipe-count-item">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span>48</span>
+          </div>
+          <div class="recipe-count-item">
+            <ion-icon name="time-outline"></ion-icon>
+            <span>48mins</span>
+          </div>
+        </div>
+      </div>
+      <div class="category-item2">
+        <div class="image-container">
+          <img src="../../../assets/food/cake2.jpg" />
+        </div>
+        <div class="recipe-count">
+          <div class="recipe-count-item">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span>48</span>
+          </div>
+          <div class="recipe-count-item">
+            <ion-icon name="time-outline"></ion-icon>
+            <span>48mins</span>
+          </div>
+        </div>
+      </div>
+      <div class="category-item2">
+        <div class="image-container">
+          <img src="../../../assets/food/shawarma1.jpg" />
+        </div>
+        <div class="recipe-count">
+          <div class="recipe-count-item">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span>48</span>
+          </div>
+          <div class="recipe-count-item">
+            <ion-icon name="time-outline"></ion-icon>
+            <span>48mins</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-link">
+      <p class="container-heading">From friends you follow</p>
+    </div>
+    <div class="recipe-list">
+      <div class="recipe-item">
+        <div class="image-container">
+          <img src="../../../assets/food/shawarma1.jpg" />
+          <div class="recipe-rating">
+            <ion-icon name="star"></ion-icon>
+            <p>4.8</p>
+            <p>| 999K reviews</p>
+          </div>
+        </div>
+        <div class="recipe-info">
+          <p class="recipe-subheading">by Farouk Bakre</p>
+          <p class="recipe-heading">Chicken Shawarma</p>
+          <p class="recipe-subheading">Breakfast</p>
+          <div class="recipe-count">
+            <div class="recipe-count-item">
+              <ion-icon name="chatbubble-outline"></ion-icon>
+              <p>48</p>
+            </div>
+            <div class="recipe-count-item">
+              <ion-icon name="heart-outline"></ion-icon>
+              <p>48</p>
+            </div>
+            <div class="recipe-count-item">
+              <ion-icon name="time-outline"></ion-icon>
+              <p>48mins</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe-item">
+        <div class="image-container">
+          <img src="../../../assets/food/cake2.jpg" />
+          <div class="recipe-rating">
+            <ion-icon name="star"></ion-icon>
+            <p>4.8</p>
+            <p>| 999K reviews</p>
+          </div>
+        </div>
+        <div class="recipe-info">
+          <p class="recipe-subheading">by Farouk Bakre</p>
+          <p class="recipe-heading">Chocolat Cupcakes</p>
+          <p class="recipe-subheading">Dessert</p>
+          <div class="recipe-count">
+            <div class="recipe-count-item">
+              <ion-icon name="chatbubble-outline"></ion-icon>
+              <p>48</p>
+            </div>
+            <div class="recipe-count-item">
+              <ion-icon name="heart-outline"></ion-icon>
+              <p>48</p>
+            </div>
+            <div class="recipe-count-item">
+              <ion-icon name="time-outline"></ion-icon>
+              <p>48mins</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe-item">
+        <div class="image-container">
+          <img src="../../../assets/food/cake1.jpg" />
+          <div class="recipe-rating">
+            <ion-icon name="star"></ion-icon>
+            <p>4.1</p>
+            <p>| 2K reviews</p>
+          </div>
+        </div>
+        <div class="recipe-info">
+          <p class="recipe-subheading">by Jimoh Abdulrazak</p>
+          <p class="recipe-heading">Chocolate Cake</p>
+          <p class="recipe-subheading">Dessert</p>
+          <div class="recipe-count">
+            <div class="recipe-count-item">
+              <ion-icon name="chatbubble-outline"></ion-icon>
+              <p>20</p>
+            </div>
+            <div class="recipe-count-item">
+              <ion-icon name="heart-outline"></ion-icon>
+              <p>482</p>
+            </div>
+            <div class="recipe-count-item">
+              <ion-icon name="time-outline"></ion-icon>
+              <p>2hrs 48mins</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="recipe-item">
+        <div class="image-container">
+          <img src="../../../assets/food/shawarma1.jpg" />
+          <div class="recipe-rating">
+            <ion-icon name="star"></ion-icon>
+            <p>4.8</p>
+            <p>| 999K reviews</p>
+          </div>
+        </div>
+        <div class="recipe-info">
+          <p class="recipe-subheading">by Farouk Bakre</p>
+          <p class="recipe-heading">Chicken Shawarma</p>
+          <p class="recipe-subheading">Breakfast</p>
+          <div class="recipe-count">
+            <div class="recipe-count-item">
+              <ion-icon name="chatbubble-outline"></ion-icon>
+              <p>48</p>
+            </div>
+            <div class="recipe-count-item">
+              <ion-icon name="heart-outline"></ion-icon>
+              <p>48</p>
+            </div>
+            <div class="recipe-count-item">
+              <ion-icon name="time-outline"></ion-icon>
+              <p>48mins</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ion-infinite-scroll >
+    <ion-infinite-scroll-content
+      loadingSpinner="lines">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+  <!-- New Post floating button -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <a>
+      <ion-fab-button>
+        <ion-icon name="add-outline"></ion-icon>
+      </ion-fab-button>
+    </a>
+    
+  </ion-fab>
+
+</ion-content>

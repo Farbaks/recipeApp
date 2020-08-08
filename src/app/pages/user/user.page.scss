@@ -1,0 +1,320 @@
+// ion-toolbar {
+//     --border-width: 0 !important;
+//     display: flex !important;
+//     justify-content: flex-start !important;
+//     transition: all ease .4s;
+//     --background: rgb(250,250,250) !important;
+// }
+// .header-md::after {
+//     background-image: none !important;
+// }
+*::-webkit-scrollbar {
+    display: none;
+  }
+ion-back-button {
+    color: var(--ion-color-primarycolor);
+    font-size: .95em;
+    text-transform: none;
+    padding:0px 10px 0px 5px;
+}
+.container {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--ion-color-secondarycolor2);
+    // height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    // overflow: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    // margin-top: 10px;
+}
+.header {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    background-color: rgb(250,250,250);
+}
+.user-top {
+    width: 100%;
+    // margin-top: 10px;
+    padding: 10px 16px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250,250,250);
+    margin-top: 44px;
+    .image-container {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+        // margin-right: 20px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center; 
+        img {
+            min-width: 190%;
+            min-height: 100%;
+        }
+    }
+    .user-names {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .name{
+        margin: 0px;
+        font-size: 1.17em;
+        font-weight: 500;
+        color: var(--ion-color-textcolor);
+    }
+    .username {
+        margin: 0px;
+        font-size: .8em;
+        font-weight: 500;
+        color: var(--ion-color-textcolor3);
+    }
+    button {
+        margin-top: 10px;
+        font-size: 12px;
+        padding: 7px 20px;
+        border-radius: 20px;
+        background-color: var(--ion-color-secondarycolor);
+        border:solid 1px var(--ion-color-secondarycolor);
+        color: white;
+    }
+}
+.bio {
+    width: 100%;
+    font-size: .8em;
+    font-weight: 500;
+    color:var(--ion-color-textcolor4);
+    padding: 0px 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+.user-info {
+    width: 100%;
+    display: flex;
+    padding: 15px 16px;
+    margin-top: 10px;
+    justify-content: space-between;
+    .follow {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        span:first-child {
+            margin:0px;
+            font-size: 1em;
+            font-weight: 500;
+            color: var(--ion-color-textcolor);
+        }
+        span:last-child {
+            // margin:0px 10px 0px 0px;
+            font-size: .8em;
+            font-weight: 400;
+            color: var(--ion-color-textcolor3);
+        }
+        div {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+    }
+    .follow:not(:last-child) {
+        padding-right: 20px;
+        // border-right: 1px solid rgb(200,200,200);
+    }
+}
+.container-link {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px 16px 0px 16px;
+    .container-heading {
+        font-size: 1.08em;
+        font-weight: 500;
+        word-spacing: 1.5px;
+        margin: 0px;
+        color: var(--ion-color-textcolor4);
+    }
+    .see-more {
+        font-size: .8em;
+        font-weight: 400;
+        color: var(--ion-color-primarycolor);
+        margin: 0px;
+    }
+}
+.category-list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 16px 0px 16px;
+    &::after {
+        content: '';
+        padding: 0.1px;
+    }
+    
+}
+ion-segment {
+    width: 100%;
+    --background:white;
+    // position: sticky;
+    // top: 44px;
+    // z-index: 9;
+    ion-segment-button {
+        --color-checked: var(--ion-color-primarycolor);
+        --background-checked:white;
+        --indicator-color:var(--ion-color-primarycolor);
+        font-size: .79em;
+        --padding-bottom:0px;
+        --padding-top:0px;
+        --padding-start:0px;
+        --padding-end:0px;
+        text-transform: none;
+        min-height: 30px !important;
+        line-height: 10px !important;
+        border-bottom: solid 1px rgb(230,230,230) !important;
+    }
+    .segment-button-checked {
+        border-bottom: none !important;
+    }
+}
+ion-slides {
+    width: 100%;
+    // height:calc(100vh - 140.95px);
+    height: auto;
+    transition: 0s all ease;
+    ion-slide {
+        width: 100%;
+        // height: 100%;
+        // overflow:auto;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        padding: 20px 16px 20px 16px;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+}
+.recipe-list {
+    width: 100%;
+    // height: 100%;
+    overflow:auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    padding: 20px 16px 20px 16px;
+    box-sizing: border-box;
+}
+.recipe-item {
+    width: 90%;
+    margin: 0px 16px 16px 0px;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    flex: none;
+    overflow: hidden; 
+    .recipe-info {
+        width: 100%;
+        min-height: 90px;
+        background-color: white;
+        padding: 5px 15px 15px 5px;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        .recipe-heading {
+            font-size: 1em;
+            font-weight: 600;
+            word-spacing: 1.5px;
+            margin: 0px;
+            color: var(--ion-color-textcolor4);
+        }
+        .recipe-subheading {
+            font-size: .75em;
+            font-weight: 500;
+            word-spacing: 1.5px;
+            margin: 0px 0px 0px 0px;
+            color: var(--ion-color-textcolor5);
+        }
+        .recipe-count {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 5px;
+            .recipe-count-item {
+                display: flex;
+                align-items: center;
+                margin-right: 10px;
+                p{
+                    margin:0;
+                    font-size: .82em;
+                    font-weight: 500;
+                    word-spacing: 1.5px;
+                    color: var(--ion-color-textcolor3);
+                    margin-left: 2px;
+                }
+                ion-icon {
+                    color:var(--ion-color-textcolor3);
+                    font-size: 1.2em;
+                    // margin-right: 4px;
+                }
+            }
+        }
+        
+    }
+    .image-container {
+        width: 100%;
+        height: 200px;
+        border-radius: 19px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        img {
+            min-width: 110%;
+            min-height: 200px;
+        }
+        .recipe-rating {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            content: '';
+            padding: 4px 10px;
+            border-radius: 10px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            p{
+                margin:0;
+                font-size: .65em;
+                font-weight: 500;
+                word-spacing: 1.5px;
+                color: var(--ion-color-textcolor4);
+                margin-left: 4px;
+            }
+            ion-icon {
+                color:#FFA000;
+                font-size: .7em;
+                // margin-right: 4px;
+            }
+        }
+    }
+}   

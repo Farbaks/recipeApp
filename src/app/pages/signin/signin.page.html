@@ -1,0 +1,26 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>signin</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="container">
+    <p class="container-heading">Sign in</p>
+    <p class="container-subheading">
+        Sign in to get access to thousand of recipes and connect with friends.
+    </p>
+    <div class="form">
+        <input type="email" placeholder="Email" />
+        <input type="password" placeholder="Password" />
+        <p class="container-subheading2">
+            <a [routerLink]="['/forgotpassword']">Forgot my Password?</a>
+        </p>
+        <button>Sign In</button>
+        
+        <p class="container-subheading2">
+            Don't have an account? <a [routerLink]="['/signup']">Create Account</a>
+        </p>
+    </div>
+  </div>
+</ion-content>

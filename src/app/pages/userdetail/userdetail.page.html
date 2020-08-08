@@ -1,0 +1,521 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/feed/user/2" icon="chevron-back" text=""></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <super-tabs *ngIf="this.type=='recipes' || this.type=='saves'" [activeTabIndex]="this.activeTab">
+    <super-tabs-toolbar slot="top">
+      <super-tab-button>
+        <ion-label>Recipes</ion-label>
+      </super-tab-button>
+      <super-tab-button>
+        <ion-label>Saves</ion-label>
+      </super-tab-button>
+    </super-tabs-toolbar>
+    <super-tabs-container>
+      <super-tab>
+        <ion-content>
+          <div class="recipe-list">
+            <div class="recipe-item">
+              <div class="image-container">
+                <img src="../../../assets/food/shawarma1.jpg" />
+                <div class="recipe-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <p>4.8</p>
+                  <p>| 999K reviews</p>
+                </div>
+              </div>
+              <div class="recipe-info">
+                <p class="recipe-subheading">by Farouk Bakre</p>
+                <p class="recipe-heading">Chicken Shawarma</p>
+                <p class="recipe-subheading">Breakfast</p>
+                <div class="recipe-count">
+                  <div class="recipe-count-item">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    <p>48</p>
+                  </div>
+                  <div class="recipe-count-item">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <p>48</p>
+                  </div>
+                  <div class="recipe-count-item">
+                    <ion-icon name="time-outline"></ion-icon>
+                    <p>48mins</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recipe-item">
+              <div class="image-container">
+                <img src="../../../assets/food/cake2.jpg" />
+                <div class="recipe-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <p>4.8</p>
+                  <p>| 999K reviews</p>
+                </div>
+              </div>
+              <div class="recipe-info">
+                <p class="recipe-subheading">by Farouk Bakre</p>
+                <p class="recipe-heading">Chocolat Cupcakes</p>
+                <p class="recipe-subheading">Dessert</p>
+                <div class="recipe-count">
+                  <div class="recipe-count-item">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    <p>48</p>
+                  </div>
+                  <div class="recipe-count-item">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <p>48</p>
+                  </div>
+                  <div class="recipe-count-item">
+                    <ion-icon name="time-outline"></ion-icon>
+                    <p>48mins</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recipe-item">
+              <div class="image-container">
+                <img src="../../../assets/food/pizza1.jpg" />
+                <div class="recipe-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <p>4.8</p>
+                  <p>| 999K reviews</p>
+                </div>
+              </div>
+              <div class="recipe-info">
+                <p class="recipe-subheading">by Farouk Bakre</p>
+                <p class="recipe-heading">Chicken Shawarma</p>
+                <p class="recipe-subheading">Breakfast</p>
+                <div class="recipe-count">
+                  <div class="recipe-count-item">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    <p>48</p>
+                  </div>
+                  <div class="recipe-count-item">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <p>48</p>
+                  </div>
+                  <div class="recipe-count-item">
+                    <ion-icon name="time-outline"></ion-icon>
+                    <p>48mins</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recipe-item">
+              <div class="image-container">
+                <img src="../../../assets/food/pancakes.jpg" />
+                <div class="recipe-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <p>4.8</p>
+                  <p>| 999K reviews</p>
+                </div>
+              </div>
+              <div class="recipe-info">
+                <p class="recipe-subheading">by Farouk Bakre</p>
+                <p class="recipe-heading">Chocolat Cupcakes</p>
+                <p class="recipe-subheading">Dessert</p>
+                <div class="recipe-count">
+                  <div class="recipe-count-item">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    <p>48</p>
+                  </div>
+                  <div class="recipe-count-item">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <p>48</p>
+                  </div>
+                  <div class="recipe-count-item">
+                    <ion-icon name="time-outline"></ion-icon>
+                    <p>48mins</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recipe-item">
+              <div class="image-container">
+                <img src="../../../assets/food/shawarma1.jpg" />
+                <div class="recipe-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <p>4.8</p>
+                  <p>| 999K reviews</p>
+                </div>
+              </div>
+              <div class="recipe-info">
+                <p class="recipe-subheading">by Farouk Bakre</p>
+                <p class="recipe-heading">Chicken Shawarma</p>
+                <p class="recipe-subheading">Breakfast</p>
+                <div class="recipe-count">
+                  <div class="recipe-count-item">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    <p>48</p>
+                  </div>
+                  <div class="recipe-count-item">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <p>48</p>
+                  </div>
+                  <div class="recipe-count-item">
+                    <ion-icon name="time-outline"></ion-icon>
+                    <p>48mins</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recipe-item">
+              <div class="image-container">
+                <img src="../../../assets/food/cake2.jpg" />
+                <div class="recipe-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <p>4.8</p>
+                  <p>| 999K reviews</p>
+                </div>
+              </div>
+              <div class="recipe-info">
+                <p class="recipe-subheading">by Farouk Bakre</p>
+                <p class="recipe-heading">Chocolat Cupcakes</p>
+                <p class="recipe-subheading">Dessert</p>
+                <div class="recipe-count">
+                  <div class="recipe-count-item">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    <p>48</p>
+                  </div>
+                  <div class="recipe-count-item">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <p>48</p>
+                  </div>
+                  <div class="recipe-count-item">
+                    <ion-icon name="time-outline"></ion-icon>
+                    <p>48mins</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recipe-item">
+              <div class="image-container">
+                <img src="../../../assets/food/shawarma1.jpg" />
+                <div class="recipe-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <p>4.8</p>
+                  <p>| 999K reviews</p>
+                </div>
+              </div>
+              <div class="recipe-info">
+                <p class="recipe-subheading">by Farouk Bakre</p>
+                <p class="recipe-heading">Chicken Shawarma</p>
+                <p class="recipe-subheading">Breakfast</p>
+                <div class="recipe-count">
+                  <div class="recipe-count-item">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    <p>48</p>
+                  </div>
+                  <div class="recipe-count-item">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <p>48</p>
+                  </div>
+                  <div class="recipe-count-item">
+                    <ion-icon name="time-outline"></ion-icon>
+                    <p>48mins</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recipe-item">
+              <div class="image-container">
+                <img src="../../../assets/food/cake2.jpg" />
+                <div class="recipe-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <p>4.8</p>
+                  <p>| 999K reviews</p>
+                </div>
+              </div>
+              <div class="recipe-info">
+                <p class="recipe-subheading">by Farouk Bakre</p>
+                <p class="recipe-heading">Chocolat Cupcakes</p>
+                <p class="recipe-subheading">Dessert</p>
+                <div class="recipe-count">
+                  <div class="recipe-count-item">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    <p>48</p>
+                  </div>
+                  <div class="recipe-count-item">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <p>48</p>
+                  </div>
+                  <div class="recipe-count-item">
+                    <ion-icon name="time-outline"></ion-icon>
+                    <p>48mins</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-content>
+      </super-tab>
+      <super-tab>
+        <ion-content>
+          <div class="recipe-list">
+            <div class="recipe-item">
+              <div class="image-container">
+                <img src="../../../assets/food/icecream1.jpg" />
+                <div class="recipe-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <p>4.8</p>
+                  <p>| 999K reviews</p>
+                </div>
+              </div>
+              <div class="recipe-info">
+                <p class="recipe-subheading">by Farouk Bakre</p>
+                <p class="recipe-heading">Chicken Shawarma</p>
+                <p class="recipe-subheading">Breakfast</p>
+                <div class="recipe-count">
+                  <div class="recipe-count-item">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    <p>48</p>
+                  </div>
+                  <div class="recipe-count-item">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <p>48</p>
+                  </div>
+                  <div class="recipe-count-item">
+                    <ion-icon name="time-outline"></ion-icon>
+                    <p>48mins</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recipe-item">
+              <div class="image-container">
+                <img src="../../../assets/food/shawarma1.jpg" />
+                <div class="recipe-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <p>4.8</p>
+                  <p>| 999K reviews</p>
+                </div>
+              </div>
+              <div class="recipe-info">
+                <p class="recipe-subheading">by Farouk Bakre</p>
+                <p class="recipe-heading">Chicken Shawarma</p>
+                <p class="recipe-subheading">Breakfast</p>
+                <div class="recipe-count">
+                  <div class="recipe-count-item">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    <p>48</p>
+                  </div>
+                  <div class="recipe-count-item">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <p>48</p>
+                  </div>
+                  <div class="recipe-count-item">
+                    <ion-icon name="time-outline"></ion-icon>
+                    <p>48mins</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="recipe-item">
+              <div class="image-container">
+                <img src="../../../assets/food/cake2.jpg" />
+                <div class="recipe-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <p>4.8</p>
+                  <p>| 999K reviews</p>
+                </div>
+              </div>
+              <div class="recipe-info">
+                <p class="recipe-subheading">by Farouk Bakre</p>
+                <p class="recipe-heading">Chocolat Cupcakes</p>
+                <p class="recipe-subheading">Dessert</p>
+                <div class="recipe-count">
+                  <div class="recipe-count-item">
+                    <ion-icon name="chatbubble-outline"></ion-icon>
+                    <p>48</p>
+                  </div>
+                  <div class="recipe-count-item">
+                    <ion-icon name="heart-outline"></ion-icon>
+                    <p>48</p>
+                  </div>
+                  <div class="recipe-count-item">
+                    <ion-icon name="time-outline"></ion-icon>
+                    <p>48mins</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ion-content>
+      </super-tab>
+    </super-tabs-container>
+  </super-tabs>
+  <super-tabs *ngIf="this.type=='followers' || this.type=='following'" [activeTabIndex]="this.activeTab">
+    <super-tabs-toolbar slot="top">
+      <super-tab-button>
+        <ion-label>Following</ion-label>
+      </super-tab-button>
+      <super-tab-button>
+        <ion-label>Followers</ion-label>
+      </super-tab-button>
+    </super-tabs-toolbar>
+    <super-tabs-container>
+      <super-tab>
+        <ion-content>
+          <div class="recipe-list">
+            <div class="user">
+              <div class="recipe-user" [routerLink]="['/tabs/feed/user/2']">
+                <div class="user-info">
+                  <img src="../../../assets/food/cake1.jpg" />
+                </div>
+                <div>
+                  <p>Farouk Bakre</p>
+                  <p>@farbaks</p>
+                </div>
+              </div>
+              <button class="follow" (click)="this.presentToast()">Follow</button>
+            </div>
+            <div class="user">
+              <div class="recipe-user" [routerLink]="['/tabs/feed/user/2']">
+                <div class="user-info">
+                  <img src="../../../assets/food/cake1.jpg" />
+                </div>
+                <div>
+                  <p>Farouk Bakre</p>
+                  <p>@farbaks</p>
+                </div>
+              </div>
+              <button class="follow" (click)="this.presentToast()">Follow</button>
+            </div>
+            <div class="user">
+              <div class="recipe-user" [routerLink]="['/tabs/feed/user/2']">
+                <div class="user-info">
+                  <img src="../../../assets/food/cake1.jpg" />
+                </div>
+                <div>
+                  <p>Farouk Bakre</p>
+                  <p>@farbaks</p>
+                </div>
+              </div>
+              <button class="follow" (click)="this.presentToast()">Follow</button>
+            </div>
+            <div class="user">
+              <div class="recipe-user" [routerLink]="['/tabs/feed/user/2']">
+                <div class="user-info">
+                  <img src="../../../assets/food/cake1.jpg" />
+                </div>
+                <div>
+                  <p>Farouk Bakre</p>
+                  <p>@farbaks</p>
+                </div>
+              </div>
+              <button class="follow" (click)="this.presentToast()">Follow</button>
+            </div>
+            <div class="user">
+              <div class="recipe-user" [routerLink]="['/tabs/feed/user/2']">
+                <div class="user-info">
+                  <img src="../../../assets/food/cake1.jpg" />
+                </div>
+                <div>
+                  <p>Farouk Bakre</p>
+                  <p>@farbaks</p>
+                </div>
+              </div>
+              <button class="following" (click)="this.presentToast()">Following</button>
+            </div>
+            <div class="user">
+              <div class="recipe-user" [routerLink]="['/tabs/feed/user/2']">
+                <div class="user-info">
+                  <img src="../../../assets/food/cake1.jpg" />
+                </div>
+                <div>
+                  <p>Farouk Bakre</p>
+                  <p>@farbaks</p>
+                </div>
+              </div>
+              <button class="following" (click)="this.presentToast()">Following</button>
+            </div>
+            <div class="user">
+              <div class="recipe-user" [routerLink]="['/tabs/feed/user/2']">
+                <div class="user-info">
+                  <img src="../../../assets/food/cake1.jpg" />
+                </div>
+                <div>
+                  <p>Farouk Bakre</p>
+                  <p>@farbaks</p>
+                </div>
+              </div>
+              <button class="follow" (click)="this.presentToast()">Follow</button>
+            </div>
+            <div class="user">
+              <div class="recipe-user" [routerLink]="['/tabs/feed/user/2']">
+                <div class="user-info">
+                  <img src="../../../assets/food/cake1.jpg" />
+                </div>
+                <div>
+                  <p>Farouk Bakre</p>
+                  <p>@farbaks</p>
+                </div>
+              </div>
+              <button class="following" (click)="this.presentToast()">Following</button>
+            </div>
+          </div>
+        </ion-content>
+      </super-tab>
+      <super-tab>
+        <ion-content>
+          <div class="recipe-list">
+            <div class="user">
+              <div class="recipe-user" [routerLink]="['/tabs/feed/user/2']">
+                <div class="user-info">
+                  <img src="../../../assets/food/cake1.jpg" />
+                </div>
+                <div>
+                  <p>Farouk Bakre</p>
+                  <p>@farbaks</p>
+                </div>
+              </div>
+              <button class="follow" (click)="this.presentToast()">Follow</button>
+            </div>
+            <div class="user">
+              <div class="recipe-user" [routerLink]="['/tabs/feed/user/2']">
+                <div class="user-info">
+                  <img src="../../../assets/food/cake1.jpg" />
+                </div>
+                <div>
+                  <p>Farouk Bakre</p>
+                  <p>@farbaks</p>
+                </div>
+              </div>
+              <button class="following" (click)="this.presentToast()">Following</button>
+            </div>
+            <div class="user">
+              <div class="recipe-user" [routerLink]="['/tabs/feed/user/2']">
+                <div class="user-info">
+                  <img src="../../../assets/food/cake1.jpg" />
+                </div>
+                <div>
+                  <p>Farouk Bakre</p>
+                  <p>@farbaks</p>
+                </div>
+              </div>
+              <button class="follow" (click)="this.presentToast()">Follow</button>
+            </div>
+            <div class="user">
+              <div class="recipe-user" [routerLink]="['/tabs/feed/user/2']">
+                <div class="user-info">
+                  <img src="../../../assets/food/cake1.jpg" />
+                </div>
+                <div>
+                  <p>Farouk Bakre</p>
+                  <p>@farbaks</p>
+                </div>
+              </div>
+              <button class="follow" (click)="this.presentToast()">Follow</button>
+            </div>
+          </div>
+        </ion-content>
+      </super-tab>
+    </super-tabs-container>
+  </super-tabs>
+</ion-content>

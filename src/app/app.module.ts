@@ -8,14 +8,31 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+
+import { StarRatingModule } from 'ionic5-star-rating';
+import { Vibration } from '@ionic-native/vibration/ngx';
+import { SuperTabsModule } from '@ionic-super-tabs/angular';
+import {HidenavModule} from 'ionic4-hidenav';
+// import { RecipeService } from './services/recipe.service';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [
+    BrowserModule, 
+    IonicModule.forRoot(), 
+    AppRoutingModule,
+    HttpClientModule,
+    StarRatingModule,
+    SuperTabsModule.forRoot(),
+    HidenavModule,
+  ],
   providers: [
     StatusBar,
     SplashScreen,
+    Vibration,
+    // RecipeService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

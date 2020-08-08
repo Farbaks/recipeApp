@@ -1,0 +1,91 @@
+*:focus {
+    outline: none !important;
+}
+.header-md::after {
+    background-image: none !important;
+}
+ion-toolbar {
+    // --border-width: 0px !important;
+    padding: 0px 10px !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    transition: all ease .4s;
+}
+*::-webkit-scrollbar {
+    display: none;
+  }
+ion-back-button {
+    color: var(--ion-color-primarycolor);
+    font-size: .95em;
+    text-transform: none;
+    padding:0px 10px 0px 5px;
+}
+#cancel {
+    padding: 10px 15px 10px 0px;
+    border: none;
+    color: var(--ion-color-primarycolor);
+    font-size: .8em;
+    background-color: transparent;
+}
+#post {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: var(--ion-color-primarycolor);
+    font-size: .8em;
+    border-radius: 20px;
+}
+.recipe-list {
+    width: 100%;
+    // height: 100%;
+    overflow:auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    padding: 20px 16px 20px 16px;
+    box-sizing: border-box;
+    .user {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        .recipe-user {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            .user-info {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                overflow: hidden;
+                margin-right: 10px;
+                img {
+                    width: 120%;
+                    min-height: 50px;
+                }
+            }
+            p{
+                margin: 0px;
+                font-size: .8em;
+                color: var(--ion-color-textcolor3);
+            }
+        }
+        .follow {
+            width: 120px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: var(--ion-color-secondarycolor);
+            border:solid 1px var(--ion-color-secondarycolor);
+            background-color: white;
+        }
+        .following {
+            width: 120px;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: var(--ion-color-secondarycolor);
+            border:solid 1px var(--ion-color-secondarycolor);
+            color: white;
+        }
+    }
+}

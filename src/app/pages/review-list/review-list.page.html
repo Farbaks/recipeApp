@@ -1,0 +1,171 @@
+<!-- <ion-header>
+  <ion-toolbar>
+    <ion-title>recipeItem</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="container">
+    <div class="header">
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/tabs" text=""></ion-back-button>
+      </ion-buttons>
+      <ion-icon name="heart-outline" (click)="this.like()" *ngIf="this.liked==false"></ion-icon>
+      <ion-icon name="heart" class="liked" (click)="this.like()" *ngIf="this.liked==true"></ion-icon>
+    </div>
+    <div class="image-container">
+      <img src="../../../assets/food/shawarma1.jpg" />
+    </div>
+    <div class="recipe-container">
+      <div class="recipe-content">
+        <p class="recipe-heading">Reviews(543)</p>
+        <div class="container-link">
+          <div class="write-review" (click)= "this.newRewiew()">
+            <ion-icon name="create-outline"></ion-icon>
+            <p>Write a Review</p>
+          </div>
+        </div>
+        <div class="review-list">
+          <div class="review-item">
+            <div class="user">
+              <div class="recipe-user">
+                <div class="user-info">
+                  <img src="../../../assets/food/cake1.jpg" />
+                </div>
+                <div>
+                  <p>Farouk Bakre</p>
+                  <p>@farbaks</p>
+                </div>
+              </div>
+              <i class="review-date">5:30PM 22nd June 2020</i>
+            </div>
+            <div>
+              <p class="review-content">
+                Learning how to make a chicken shawarma with beef sausages can be fun. 
+                Spice up this recipe by adding a bit of alligator pepper to spice things up.
+              </p>
+            </div>
+            <div class="recipe-count">
+              <div class="recipe-count-item">
+                <ion-icon name="heart-outline" (click)="this.like()" *ngIf="this.liked==false"></ion-icon>
+                <ion-icon name="heart" class="liked" (click)="this.like()" *ngIf="this.liked==true"></ion-icon>
+                <p>48</p>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="user">
+              <div class="recipe-user">
+                <div class="user-info">
+                  <img src="../../../assets/food/cake1.jpg" />
+                </div>
+                <div>
+                  <p>Farouk Bakre</p>
+                  <p>@farbaks</p>
+                </div>
+              </div>
+              <i class="review-date">5:30PM 22nd June 2020</i>
+            </div>
+            <div>
+              <p class="review-content">
+                Learning how to make a chicken shawarma with beef sausages can be fun. 
+                Spice up this recipe by adding a bit of alligator pepper to spice things up.
+              </p>
+            </div>
+            <div class="recipe-count">
+              <div class="recipe-count-item">
+                <ion-icon name="heart-outline" (click)="this.like()" *ngIf="this.liked==false"></ion-icon>
+                <ion-icon name="heart" class="liked" (click)="this.like()" *ngIf="this.liked==true"></ion-icon>
+                <p>48</p>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="user">
+              <div class="recipe-user">
+                <div class="user-info">
+                  <img src="../../../assets/food/cake1.jpg" />
+                </div>
+                <div>
+                  <p>Farouk Bakre</p>
+                  <p>@farbaks</p>
+                </div>
+              </div>
+              <i class="review-date">5:30PM 22nd June 2020</i>
+            </div>
+            <div>
+              <p class="review-content">
+                Learning how to make a chicken shawarma with beef sausages can be fun. 
+                Spice up this recipe by adding a bit of alligator pepper to spice things up.
+              </p>
+            </div>
+            <div class="recipe-count">
+              <div class="recipe-count-item">
+                <ion-icon name="heart-outline" (click)="this.like()" *ngIf="this.liked==false"></ion-icon>
+                <ion-icon name="heart" class="liked" (click)="this.like()" *ngIf="this.liked==true"></ion-icon>
+                <p>48</p>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="user">
+              <div class="recipe-user">
+                <div class="user-info">
+                  <img src="../../../assets/food/cake1.jpg" />
+                </div>
+                <div>
+                  <p>Farouk Bakre</p>
+                  <p>@farbaks</p>
+                </div>
+              </div>
+              <i class="review-date">5:30PM 22nd June 2020</i>
+            </div>
+            <div>
+              <p class="review-content">
+                Learning how to make a chicken shawarma with beef sausages can be fun. 
+                Spice up this recipe by adding a bit of alligator pepper to spice things up.
+              </p>
+            </div>
+            <div class="recipe-count">
+              <div class="recipe-count-item">
+                <ion-icon name="heart-outline" (click)="this.like()" *ngIf="this.liked==false"></ion-icon>
+                <ion-icon name="heart" class="liked" (click)="this.like()" *ngIf="this.liked==true"></ion-icon>
+                <p>48</p>
+              </div>
+            </div>
+          </div>
+          <div class="review-item">
+            <div class="user">
+              <div class="recipe-user">
+                <div class="user-info">
+                  <img src="../../../assets/food/cake1.jpg" />
+                </div>
+                <div>
+                  <p>Farouk Bakre</p>
+                  <p>@farbaks</p>
+                </div>
+              </div>
+              <i class="review-date">5:30PM 22nd June 2020</i>
+            </div>
+            <div>
+              <p class="review-content">
+                Learning how to make a chicken shawarma with beef sausages can be fun. 
+                Spice up this recipe by adding a bit of alligator pepper to spice things up.
+              </p>
+            </div>
+            <div class="recipe-count">
+              <div class="recipe-count-item">
+                <ion-icon name="heart-outline" (click)="this.like()" *ngIf="this.liked==false"></ion-icon>
+                <ion-icon name="heart" class="liked" (click)="this.like()" *ngIf="this.liked==true"></ion-icon>
+                <p>48</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="add-review">
+
+    </div>
+  </div>
+</ion-content>
