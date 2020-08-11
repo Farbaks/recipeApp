@@ -1,0 +1,133 @@
+<ion-header translucent="true">
+  <ion-toolbar class="toolbar1" id="header">
+    <div>
+      <p class="profile-heading">Notifications</p>
+      <!-- <p class="profile-subheading">Notification</p> -->
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="recipe-list">
+    <!-- Follow notification -->
+    <div class="user">
+      <div class="user-info">
+        <img src="../../../assets/food/cake1.jpg" />
+      </div>
+      <div class="recipe-user" [routerLink]="['/tabs/feed/user/2']">
+        <div class="recipe-user-content">
+          <div>
+            <p><b>Farouk Bakre</b> started following you.</p>
+          </div>
+          <button class="follow" (click)="this.presentToast()">Follow</button>
+        </div>
+      </div>
+    </div>
+    <!-- Saved recipe notification -->
+    <div class="user">
+      <div class="user-info">
+        <img src="../../../assets/food/cake1.jpg" />
+      </div>
+      <div class="recipe-user" [routerLink]="['/tabs/feed/user/2']">
+        <div class="recipe-user-content">
+          <div>
+            <p><b>Farouk Bakre</b> saved your recipe.</p>
+          </div>
+          <button class="following" (click)="this.presentToast()">Following</button>
+        </div>
+        <div class="recipe-item">
+          <div class="image-container">
+            <img src="../../../assets/food/cake1.jpg" />
+            <div class="recipe-rating">
+              <ion-icon name="star"></ion-icon>
+              <p>4.1</p>
+              <p>| 2K reviews</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Rated recipe notification -->
+    <div class="user">
+      <div class="user-info">
+        <img src="../../../assets/food/cake1.jpg" />
+      </div>
+      <div class="recipe-user" [routerLink]="['/tabs/feed/user/2']">
+        <div class="recipe-user-content">
+          <div>
+            <p><b>Jimoh Abdulrazak</b> rated your recipe.</p>
+          </div>
+          <button class="follow" (click)="this.presentToast()">Follow</button>
+        </div>
+        <ionic5-star-rating #rating activeIcon="star" defaultIcon="star-outline"
+          activeColor="#FFA000" defaultColor="#FFA000" readonly="true"
+          rate="4" fontSize="18px" >
+        </ionic5-star-rating>
+        <div class="recipe-item">
+          <div class="image-container">
+            <img src="../../../assets/food/icecream1.jpg" />
+            <div class="recipe-rating">
+              <ion-icon name="star"></ion-icon>
+              <p>4.1</p>
+              <p>| 2K reviews</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Replied recipe notification -->
+    <div class="user">
+      <div class="user-info">
+        <img src="../../../assets/food/cake1.jpg" />
+      </div>
+      <div class="recipe-user" [routerLink]="['/tabs/feed/user/2']">
+        <div class="recipe-user-content">
+          <div>
+            <p><b>Farouk Bakre</b> commented on your recipe.</p>
+          </div>
+          <button class="follow" (click)="this.presentToast()">Follow</button>
+        </div>
+        <div class="review-item">
+          <div>
+            <p class="review-content">
+              Learning how to make a chicken shawarma with beef sausages can be fun. 
+              Spice up this recipe by adding a bit of alligator pepper to spice things up.
+            </p>
+          </div>
+        </div>
+        <div class="recipe-item">
+          <div class="image-container">
+            <img src="../../../assets/food/pizza1.jpg" />
+            <div class="recipe-rating">
+              <ion-icon name="star"></ion-icon>
+              <p>4.1</p>
+              <p>| 2K reviews</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Liked comment notification -->
+    <div class="user">
+      <div class="user-info">
+        <img src="../../../assets/food/cake1.jpg" />
+      </div>
+      <div class="recipe-user" [routerLink]="['/tabs/feed/user/2']">
+        <div class="recipe-user-content">
+          <div>
+            <p><b>Farouk Bakre</b> liked your comment to <b>Chicken Shawarma</b> recipe.</p>
+          </div>
+          <button class="following" (click)="this.presentToast()">Following</button>
+        </div>
+        <div class="review-item">
+          <div>
+            <p class="review-content">
+              Learning how to make a chicken shawarma with beef sausages can be fun. 
+              Spice up this recipe by adding a bit of alligator pepper to spice things up.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

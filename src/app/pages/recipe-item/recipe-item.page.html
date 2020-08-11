@@ -18,7 +18,7 @@
     </div>
     <div class="recipe-container">
       <div class="recipe-content">
-        <p class="recipe-subheading2" [routerLink] = "['/tabs/feed/categories/1']">
+        <p class="recipe-subheading2" [routerLink]="['/tabs/feed/categories/1']">
           <span>Breakfast </span>
           <li class="recipe-info-content">
             <i>5:30PM 22nd June 2020</i>
@@ -73,7 +73,7 @@
         <div class="recipe-info">
           <p class="recipe-subheading">About Recipe</p>
           <p class="recipe-info-content">
-            Learning how to make a chicken shawarma with beef sausages can be fun. 
+            Learning how to make a chicken shawarma with beef sausages can be fun.
             Spice up this recipe by adding a bit of alligator pepper to spice things up.
 
           </p>
@@ -93,7 +93,7 @@
         <div class="recipe-info">
           <p class="recipe-subheading">Steps</p>
           <li class="recipe-info-content">
-            Rinse cabbage in a bowl of water and  then slice the cabbage into very tiny bits.
+            Rinse cabbage in a bowl of water and then slice the cabbage into very tiny bits.
           </li>
           <li class="recipe-info-content">
             Sausages
@@ -108,19 +108,13 @@
         </div>
         <div class="container-link">
           <p class="rate">Tap to rate:</p>
-          <ionic5-star-rating #rating
-            activeIcon = "star"
-            defaultIcon = "star-outline"
-            activeColor = "var(--ion-color-primarycolor)" 
-            defaultColor = "var(--ion-color-primarycolor3)"
-            readonly="false"
-            [(ngModel)]="rate"
-            fontSize = "18px"
-            (ratingChanged)="logRatingChange($event)">
-        </ionic5-star-rating>
+          <ionic5-star-rating #rating activeIcon="star" defaultIcon="star-outline"
+            activeColor="var(--ion-color-primarycolor)" defaultColor="var(--ion-color-primarycolor3)" readonly="false"
+            [(ngModel)]="rate" fontSize="18px" (ratingChanged)="logRatingChange($event)">
+          </ionic5-star-rating>
         </div>
         <div class="container-link">
-          <div class="write-review" (click)= "this.newRewiew()">
+          <div class="write-review" (click)="this.newRewiew()">
             <ion-icon name="create-outline"></ion-icon>
             <p>Write a Review</p>
           </div>

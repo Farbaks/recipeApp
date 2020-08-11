@@ -70,6 +70,15 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'notification',
+        children: [
+          {
+            path: '',
+            loadChildren: 'src/app/pages/notification/notification.module#NotificationPageModule'
+          },
+        ]
+      },
+      {
         path: '',
         redirectTo: 'feed',
         pathMatch: 'full'
