@@ -1,0 +1,345 @@
+.header-md::after {
+    background-image: none !important;
+}
+ion-toolbar {
+    --border-width: 0px !important;
+    padding: 10px 16px 5px 16px !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+    transition: all ease .4s;
+}
+.toolbar1 {
+    display: flex !important;
+    justify-content: flex-start !important;
+}
+.profile-heading {
+    font-size: 1.35em;
+    font-weight: 500;
+    word-spacing: 1.5px;
+    margin: 0px;
+    color: var(--ion-color-textcolor);
+}
+.profile-subheading {
+    font-size: .8em;
+    font-weight: 500;
+    word-spacing: 1.5px;
+    margin: 0px;
+    color: var(--ion-color-textcolor5);
+}
+.profile-img {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: 100%;
+        min-height: 100%;
+    }
+}
+.container {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--ion-color-secondarycolor2);
+    min-height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.home-search {
+    width: 100%;
+    border-radius: 33px;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    // margin: 0px 16px 0px 16px;
+    padding: 0px 10px;
+    border: solid 1px var(--ion-color-bgcolor);
+    background-color: var(--ion-color-bgcolor);
+    ion-icon {
+        font-size: 1em;
+        color: var(--ion-color-textcolor4);
+    }
+    input {
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        padding: 10px;
+        font-size: .85em;
+    }
+}
+.container-link {
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px 16px 0px 16px;
+}
+.container-heading {
+    font-size: 1.12em;
+    font-weight: 600;
+    word-spacing: 1.5px;
+    margin: 0px;
+    color: var(--ion-color-textcolor4);
+}
+.see-more {
+    font-size: .8em;
+    font-weight: 400;
+    color: var(--ion-color-primarycolor);
+    margin: 0px;
+}
+.category-list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 16px 20px 16px;
+    &::after {
+        content: '';
+        padding: 0.1px;
+    }
+    
+}
+.category-item {
+    width: 43%;
+    margin-right: 16px;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    flex: none;
+    box-shadow: 5px 10px 15px -5px rgba(0,0,0,0.2), 5px 10px 15px -5px rgba(0,0,0,0.04); 
+    border-radius: 9px;
+    overflow: hidden; 
+    p{
+        width: 100%;
+        padding: 15px;
+        margin:0px;
+        font-weight: 600;
+        font-size: .9em;
+        color: var(--ion-color-textcolor3);
+    }
+    .image-container {
+        width: 100%;
+        height: 110px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        img {
+            width: 100%;
+            min-height: 120px;
+        }
+    }
+}
+.category-item2 {
+    width: 58%;
+    margin-right: 16px;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    flex: none;
+    box-shadow: 5px 10px 15px -5px rgba(0,0,0,0.2), 5px 10px 15px -5px rgba(0,0,0,0.04); 
+    border-radius: 9px;
+    overflow: hidden; 
+    p{
+        width: 100%;
+        padding: 15px;
+        margin:0px;
+        font-weight: 600;
+        font-size: .9em;
+        color: var(--ion-color-textcolor3);
+    }
+    .image-container {
+        width: 100%;
+        height: 140px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        img {
+            width: 100%;
+            min-height: 140px;
+        }
+    }
+    .recipe-count {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        // margin-top: 5px;
+        padding: 12px;
+        .recipe-count-item {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+            span{
+                margin:0;
+                font-size: .82em;
+                font-weight: 500;
+                word-spacing: 1.5px;
+                color: var(--ion-color-textcolor4);
+                margin-left: 2px;
+            }
+            ion-icon {
+                color:var(--ion-color-textcolor3);
+                font-size: .9em;
+                // margin-right: 4px;
+            }
+        }
+    }
+}
+.recipe-list {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    margin: 20px 0px 0px 0px;
+    padding: 0px 16px 20px 16px;
+}
+.recipe-item {
+    width: 100%;
+    margin: 0px 0px 16px 0px;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    flex: none;
+    // box-shadow: 5px 10px 15px -5px rgba(0,0,0,0.2), 5px 10px 15px -5px rgba(0,0,0,0.04); 
+    overflow: hidden; 
+    .recipe-info {
+        width: 100%;
+        min-height: 90px;
+        background-color: white;
+        padding: 5px 15px 15px 5px;
+        .recipe-heading {
+            font-size: 1em;
+            font-weight: 600;
+            word-spacing: 1.5px;
+            margin: 0px;
+            color: var(--ion-color-textcolor4);
+        }
+        .recipe-subheading {
+            font-size: .75em;
+            font-weight: 500;
+            word-spacing: 1.5px;
+            margin: 0px 0px 0px 0px;
+            color: var(--ion-color-textcolor5);
+        }
+        .recipe-count {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 5px;
+            .recipe-count-item {
+                display: flex;
+                align-items: center;
+                margin-right: 10px;
+                p{
+                    margin:0;
+                    font-size: .82em;
+                    font-weight: 500;
+                    word-spacing: 1.5px;
+                    color: var(--ion-color-textcolor3);
+                    margin-left: 2px;
+                }
+                ion-icon {
+                    color:var(--ion-color-textcolor3);
+                    font-size: 1.2em;
+                    // margin-right: 4px;
+                }
+            }
+        }
+        
+    }
+    .image-container {
+        width: 100%;
+        border-radius: 19px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        img {
+            width: 100%;
+            min-height: 120px;
+        }
+        .recipe-rating {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            content: '';
+            padding: 4px 10px;
+            border-radius: 10px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            p{
+                margin:0;
+                font-size: .65em;
+                font-weight: 500;
+                word-spacing: 1.5px;
+                color: var(--ion-color-textcolor4);
+                margin-left: 4px;
+            }
+            ion-icon {
+                color:#FFA000;
+                font-size: .7em;
+                // margin-right: 4px;
+            }
+        }
+    }
+}
+ion-fab-button  {
+    --background: var(--ion-color-primarycolor);
+    .button-native {
+        border-bottom-right-radius: 0px !important;
+    }
+    
+}
+.button-native {
+    border-bottom-right-radius: 0px !important;
+}
+@media screen and (min-width:750px){
+    .category-item {
+        width: 40%;
+        .image-container {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            img {
+                width: 100%;
+                min-height: 300px;
+            }
+        }
+    }
+    .category-item2 {
+        width: 45%;
+        .image-container {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            img {
+                width: 100%;
+                min-height: 300px;
+            }
+        }
+    }
+}

@@ -8,11 +8,14 @@ import { SearchResultPageRoutingModule } from './search-result-routing.module';
 
 import { SearchResultPage } from './search-result.page';
 
+import { SuperTabsModule } from '@ionic-super-tabs/angular';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    SuperTabsModule,
     SearchResultPageRoutingModule
   ],
   declarations: [SearchResultPage]

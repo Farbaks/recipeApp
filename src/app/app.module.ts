@@ -13,7 +13,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { StarRatingModule } from 'ionic5-star-rating';
 import { Vibration } from '@ionic-native/vibration/ngx';
 import { SuperTabsModule } from '@ionic-super-tabs/angular';
-import {HidenavModule} from 'ionic4-hidenav';
 // import { RecipeService } from './services/recipe.service';
 
 @NgModule({
@@ -26,7 +25,6 @@ import {HidenavModule} from 'ionic4-hidenav';
     HttpClientModule,
     StarRatingModule,
     SuperTabsModule.forRoot(),
-    HidenavModule,
   ],
   providers: [
     StatusBar,

@@ -31,8 +31,10 @@ export class FeedPage implements OnInit {
   }
 
   search() {
-    console.log(this.query);
-    this.router.navigate(['/tabs/feed/search/'+this.query]);
+    if (this.query != "") {
+      this.router.navigate(['/tabs/feed/search/'+this.query]);
+    }
+    
   }
 
 }

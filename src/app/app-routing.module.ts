@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'signin',
     pathMatch: 'full'
   },
   {
@@ -74,6 +74,22 @@ const routes: Routes = [
   {
     path: 'notification',
     loadChildren: () => import('./pages/notification/notification.module').then( m => m.NotificationPageModule)
+  },
+  {
+    path: 'notification-detail',
+    loadChildren: () => import('./pages/notification-detail/notification-detail.module').then( m => m.NotificationDetailPageModule)
+  },
+  {
+    path: 'saves',
+    loadChildren: () => import('./pages/saves/saves.module').then( m => m.SavesPageModule)
+  },
+  {
+    path: 'account',
+    loadChildren: () => import('./pages/account/account.module').then( m => m.AccountPageModule)
+  },
+  {
+    path: 'account-settings',
+    loadChildren: () => import('./pages/account-settings/account-settings.module').then( m => m.AccountSettingsPageModule)
   },
 ];
 

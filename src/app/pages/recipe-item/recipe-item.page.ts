@@ -42,4 +42,8 @@ export class RecipeItemPage implements OnInit {
     this.recipeService.showNewReviewModal(this.type, this.typeId, this.userId);
   }
 
+  logRatingChange(event:any) {
+    console.log('done');
+  }
+
 }

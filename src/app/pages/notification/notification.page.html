@@ -19,21 +19,21 @@
           <div>
             <p><b>Farouk Bakre</b> started following you.</p>
           </div>
-          <button class="follow" (click)="this.presentToast()">Follow</button>
+          <button class="follow" >Follow</button>
         </div>
       </div>
     </div>
     <!-- Saved recipe notification -->
-    <div class="user">
-      <div class="user-info">
+    <div class="user" [routerLink]="['/tabs/notification/2']">
+      <div class="user-info" [routerLink]="['/tabs/feed/user/2']">
         <img src="../../../assets/food/cake1.jpg" />
       </div>
-      <div class="recipe-user" [routerLink]="['/tabs/feed/user/2']">
+      <div class="recipe-user">
         <div class="recipe-user-content">
-          <div>
+          <div [routerLink]="['/tabs/feed/user/2']">
             <p><b>Farouk Bakre</b> saved your recipe.</p>
           </div>
-          <button class="following" (click)="this.presentToast()">Following</button>
+          <button class="following" >Following</button>
         </div>
         <div class="recipe-item">
           <div class="image-container">
@@ -57,7 +57,7 @@
           <div>
             <p><b>Jimoh Abdulrazak</b> rated your recipe.</p>
           </div>
-          <button class="follow" (click)="this.presentToast()">Follow</button>
+          <button class="follow" >Follow</button>
         </div>
         <ionic5-star-rating #rating activeIcon="star" defaultIcon="star-outline"
           activeColor="#FFA000" defaultColor="#FFA000" readonly="true"
@@ -85,13 +85,13 @@
           <div>
             <p><b>Farouk Bakre</b> commented on your recipe.</p>
           </div>
-          <button class="follow" (click)="this.presentToast()">Follow</button>
+          <button class="follow" >Follow</button>
         </div>
         <div class="review-item">
           <div>
             <p class="review-content">
               Learning how to make a chicken shawarma with beef sausages can be fun. 
-              Spice up this recipe by adding a bit of alligator pepper to spice things up.
+              Spice up this recipe by adding a bit of alligator pepper to spice things up.n
             </p>
           </div>
         </div>
@@ -117,7 +117,7 @@
           <div>
             <p><b>Farouk Bakre</b> liked your comment to <b>Chicken Shawarma</b> recipe.</p>
           </div>
-          <button class="following" (click)="this.presentToast()">Following</button>
+          <button class="following" >Following</button>
         </div>
         <div class="review-item">
           <div>

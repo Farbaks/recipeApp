@@ -10,79 +10,100 @@ const routes: Routes = [
     children: [
       {
         path: 'feed',
+        loadChildren: () => import('src/app/pages/feed/feed.module').then(m => m.FeedPageModule),
         children: [
           {
             path: '',
-            loadChildren: 'src/app/pages/feed/feed.module#FeedPageModule'
+            loadChildren: () => import('src/app/pages/feed/feed.module').then(m => m.FeedPageModule) 
           },
           {
             path: 'search/:query',
-            loadChildren: 'src/app/pages/search-result/search-result.module#SearchResultPageModule'
+            loadChildren: () => import('src/app/pages/search-result/search-result.module').then(m => m.SearchResultPageModule)
           },
           {
             path: 'categories',
-            loadChildren: 'src/app/pages/categories/categories.module#CategoriesPageModule'
+            loadChildren: () => import('src/app/pages/categories/categories.module').then(m => m.CategoriesPageModule)
           },
           {
             path: 'categories/:id',
-            loadChildren: 'src/app/pages/recipe-category-list/recipe-category-list.module#RecipeCategoryListPageModule'
+            loadChildren: () => import('src/app/pages/recipe-category-list/recipe-category-list.module').then(m => m.RecipeCategoryListPageModule)
           },
           {
             path: 'custom-recipe-list/:listType',
-            loadChildren: 'src/app/pages/recipe-custom-list/recipe-custom-list.module#RecipeCustomListPageModule'
-          },
-          {
-            path: 'custom-recipe-list/:listType',
-            loadChildren: 'src/app/pages/recipe-custom-list/recipe-custom-list.module#RecipeCustomListPageModule'
+            loadChildren: () => import('src/app/pages/recipe-custom-list/recipe-custom-list.module').then(m => m.RecipeCustomListPageModule)
           },
           {
             path: 'recipe/:id',
-            loadChildren: 'src/app/pages/recipe-item/recipe-item.module#RecipeItemPageModule',
+            loadChildren: () => import('src/app/pages/recipe-item/recipe-item.module').then(m => m.RecipeItemPageModule),
             children: [
               {
                 path: '',
-                loadChildren: 'src/app/pages/recipe-item/recipe-item.module#RecipeItemPageModule',
+                loadChildren: () => import('src/app/pages/recipe-item/recipe-item.module').then(m => m.RecipeItemPageModule),
               },
               {
                 path: 'reviews',
-                loadChildren: 'src/app/pages/review-list/review-list.module#ReviewListPageModule',
+                loadChildren: () => import('src/app/pages/review-list/review-list.module').then(m => m.ReviewListPageModule),
               }
             ]
           },
           {
             path: 'user/:id',
-            loadChildren: 'src/app/pages/user/user.module#UserPageModule',
+            loadChildren: () => import('src/app/pages/user/user.module').then(m => m.UserPageModule),
             children: [
               {
                 path: '',
-                loadChildren: 'src/app/pages/user/user.module#UserPageModule'
+                loadChildren: () => import('src/app/pages/user/user.module').then(m => m.UserPageModule),
               },
               {
                 path: 'detail/:type',
-                loadChildren: 'src/app/pages/userdetail/userdetail.module#UserdetailPageModule'
+                loadChildren: () => import('src/app/pages/userdetail/userdetail.module').then(m => m.UserdetailPageModule),
               },
             ]
           },
           {
             path: 'saved-by/:id',
-            loadChildren: 'src/app/pages/saved-by/saved-by.module#SavedByPageModule'
+            loadChildren: () => import('src/app/pages/saved-by/saved-by.module').then(m => m.SavedByPageModule),
           },
         ]
       },
       {
         path: 'notification',
+        loadChildren: () => import('src/app/pages/notification/notification.module').then(m => m.NotificationPageModule),
         children: [
           {
             path: '',
-            loadChildren: 'src/app/pages/notification/notification.module#NotificationPageModule'
+            loadChildren: () => import('src/app/pages/notification/notification.module').then(m => m.NotificationPageModule),
+          },
+          {
+            path: ':id',
+            loadChildren: () => import('src/app/pages/notification-detail/notification-detail.module').then(m => m.NotificationDetailPageModule),
           },
         ]
       },
       {
-        path: '',
-        redirectTo: 'feed',
-        pathMatch: 'full'
-      }
+        path: 'saves',
+        loadChildren: () => import('src/app/pages/saves/saves.module').then(m => m.SavesPageModule),
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('src/app/pages/saves/saves.module').then(m => m.SavesPageModule),
+          },
+        ]
+      },
+      {
+        path: 'account',
+        loadChildren: () => import('src/app/pages/account/account.module').then(m => m.AccountPageModule),
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('src/app/pages/account/account.module').then(m => m.AccountPageModule),
+          },
+        ]
+      },
+      { 
+        path: '', 
+        loadChildren: () => import('src/app/pages/feed/feed.module').then(m => m.FeedPageModule) 
+      },
     ]
   }
 ];
@@ -91,4 +112,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class TabsPageRoutingModule {}
+export class TabsPageRoutingModule { }

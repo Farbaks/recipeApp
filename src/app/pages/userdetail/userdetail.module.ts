@@ -8,12 +8,15 @@ import { UserdetailPageRoutingModule } from './userdetail-routing.module';
 
 import { UserdetailPage } from './userdetail.page';
 
+import { SuperTabsModule } from '@ionic-super-tabs/angular';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    UserdetailPageRoutingModule
+    UserdetailPageRoutingModule,
+    SuperTabsModule,
   ],
   declarations: [UserdetailPage]
 })
